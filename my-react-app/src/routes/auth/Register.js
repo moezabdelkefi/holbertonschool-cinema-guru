@@ -27,6 +27,7 @@ const Register = ({ username, password, setUsername, setPassword, handleSubmit }
                 value={password}
                 onChange={handleInputChange}
             />
+
             <button type="submit">Sign Up</button>
         </form>
     );
