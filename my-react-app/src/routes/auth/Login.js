@@ -1,7 +1,7 @@
 import React from 'react';
 import './auth.css';
 
-const Login = ({ username, password, setUsername, setPassword }) => {
+const Login = ({ username, password, setUsername, setPassword, handleSubmit }) => {
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         if (name === 'username') {
@@ -9,10 +9,6 @@ const Login = ({ username, password, setUsername, setPassword }) => {
         } else if (name === 'password') {
             setPassword(value);
         }
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
     };
 
     return (
